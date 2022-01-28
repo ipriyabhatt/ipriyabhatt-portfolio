@@ -243,7 +243,7 @@ section .title::after{
     width: 55%;
 }
 .about .about-content .right .text{
-    font-size: 25px;
+    font-size: 40px;
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -257,9 +257,9 @@ section .title::after{
     display: inline-block;
     background: crimson;
     color: #fff;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 10px 30px;
+    font-size: 500px;
+    font-weight: 600;
+    padding: 20px 30px;
     margin-top: 20px;
     border-radius: 6px;
     border: 2px solid crimson;
@@ -282,7 +282,7 @@ section .title::after{
     font-family: 'Ubuntu', sans-serif;
 }
 .skills .title::after{
-    content: "what i know";
+    content: "";
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -366,7 +366,7 @@ section .title::after{
     font-family: 'Ubuntu', sans-serif;
 }
 .contact .title::after{
-    content: "get in touch";
+    content: "";
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
@@ -374,24 +374,99 @@ section .title::after{
 .contact .contact-content .text{
     font-size: 20px;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 .contact .contact-content .left p{
     text-align: justify;
 }
 .contact .contact-content .left .icons{
-    margin: 10px 0;
+    margin: 20px 0;
 }
+.contact-icons {
+    margin-bottom: 20px;
+    padding: 0 10px;
+    height: 50px;
+    width: 180px;
+    background-color: crimson;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contact-icons i {
+    line-height: 40px;
+    vertical-align: middle;
+    font-size: 30px;
+    height: 100%;
+    margin: 0 10px;
+    color: white;
+    transition: all 0.5s;
+}
+
+
+
+@media only screen and (min-width: 1440px) {
+    .contact-icons {
+        width: 240px;
+        padding: 4px 0;
+    }
+
+    .contact-icons i {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .contact-icons {
+        width: 310px;
+        padding: 7px 0;
+    }
+
+    .contact-icons i {
+        font-size: 42px;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    .contact-icons {
+        width: 480px;
+        padding: 25px 0;
+    }
+
+    .contact-icons i {
+        font-size: 65px;
+        margin: 0 18px;
+    }
+}
+
+.contact-icons i.fa-envelope:hover {
+    color: var(--secondary);
+}
+
+.contact-icons i.fa-linkedin-in:hover {
+    color: var(--primary-light);
+}
+
+.contact-icons i.fa-github:hover {
+    color: var(--light-grey);
+}
+
+
+
+
+
+
+
+
 .contact .contact-content .row{
     display: flex;
-    height: 65px;
+    height: 45px;
     align-items: center;
 }
 .contact .contact-content .row .info{
-    margin-left: 30px;
+    margin-left: 25px;
 }
 .contact .contact-content .row i{
-    font-size: 25px;
+    font-size: 30px;
     color: crimson;
 }
 .contact .contact-content .info .head{
